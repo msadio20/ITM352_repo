@@ -1,2 +1,2 @@
 # hello-world
-Creating firs repository for Module 2.
+Creating first repository for Module 2.
