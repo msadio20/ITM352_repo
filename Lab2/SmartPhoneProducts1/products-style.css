@@ -1,0 +1,43 @@
+/*Typography*/
+h1 {
+    text-align: center;
+    font-family: 'Optima', sans;
+    font-size: xx-large;
+}
+h2 {
+    text-align: center;
+    font-family: 'Optima', sans;
+    font-size: x-large;
+}
+p {
+    text-align: right;
+    font-family: 'Optima' sans;
+    font-size: medium;
+}
+
+/*Form-Styling*/
+body {
+    font-family: 'Optima', sans;
+    width: 800px;
+    margin: 0 auto;
+}
+
+/*Block-Styling*/
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-image: url(images/phone_globe.jpg);
+}
+div {
+    background-repeat: no-repeat;
+    border: 5px solid black;
+    color: black;
+    display: flex;
+}
+
+/*General*/
+.item img {
+    height: 200px;
+    width: 200px;
+}
