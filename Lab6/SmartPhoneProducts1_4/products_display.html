@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Smartphone Products</title>
+    <link rel="stylesheet" href="products-style.css">
+    <style id="localStyle"></style>
+</head>
+<header>
+    <h1>
+        <span id="top_title"></span>
+    </h1>
+    <p style="text-align: center; font-weight: bold;">
+        Hits:<span id="hits_span">0</span>
+        Spins:<span id="spins_span">0</span>
+        Hit/Span: <span id="hit_spin_span">0</span> 
+        <br> <br>
+        You win : <span id="win_span">pending...</span>
+    </p>
+</header>
+
+<body> 
+    <div class="slogan">
+        <slogan>
+            <h2>Be wise. Shop wise. Shop Maddie's Used Smart Phones!</h2>
+        </slogan>
+    </div>
+
+    <div class="slider">
+        <input id='speedSlider' type='range' min=".1" max="5" step=".1" style="direction: rtl;" onchange="localStyle.innerHTML = '.rotate img {animation-duration: ' + speedSlider.value + 's;}';">
+    </div>
+    
+<div>
+    <main class= "main">
+        <section class="item" 
+        onmouseover="changeClassName(this);"
+        onclick="resetClassName(this);">
+            <h2>HTC</h2>
+            <p>&dollar;40.00</p>
+            <img src=http://dport96.github.io/ITM352/morea/080.flow-control-II/HTC.jpg />
+        </section>
+
+        <section class="item" 
+        onmouseover="changeClassName(this);"
+        onclick="resetClassName(this);">
+            <h2>Apple</h2>
+            <p>&dollar;75.00</p>
+            <img src=http://dport96.github.io/ITM352/morea/080.flow-control-II/iphone-3gs.jpg />
+        </section>
+
+        <section class="item" 
+        onmouseover="changeClassName(this);"
+        onclick="resetClassName(this);">
+            <h2>Nokia</h2>
+            <p>&dollar;35.00</p>
+            <img src=http://dport96.github.io/ITM352/morea/080.flow-control-II/Nokia.jpg />
+        </section>
+
+        <section class="item" 
+        onmouseover="changeClassName(this);"
+        onclick="resetClassName(this);">
+            <h2>Samsung</h2>
+            <p>&dollar;45.00</p>
+            <img src=http://dport96.github.io/ITM352/morea/080.flow-control-II/Samsung.jpg />
+        </section>
+
+        <section class="item" 
+        onmouseover="changeClassName(this);"
+        onclick="resetClassName(this);">
+            <h2>Blackberry</h2>
+            <p>&dollar;10.00</p>
+            <img src=http://dport96.github.io/ITM352/morea/080.flow-control-II/Blackberry.jpg />
+        </section>
+    </main>
+</div>
+</body>
+    <footer>
+        <h1>
+            <span id="bottom_title">s
+        </h1>
+    </footer>
+    <script src="products_display.js"></script>
+</html>
