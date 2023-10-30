@@ -1,0 +1,50 @@
+<!-- invoice.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="invoice.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Receipt</title>
+</head>
+<body>
+    <h1> Womens UGGs Sales Receipt</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Extended Price</th>
+            </tr>
+        </thead>
+        <tbody id="invoiceTable">
+            <!-- Product rows will be added dynamically using JavaScript -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Sub-total</td>
+                <td id="subtotal_cell">$0.00</td>
+            </tr>
+            <tr>
+                <td colspan="3">Tax @ 5.75%</td>
+                <td id="tax_cell">$0.00</td>
+            </tr>
+            <tr>
+                <td colspan="3"><strong>Shipping</strong></td>
+                <td id="shipping_cell"><strong>$0.00</strong></td>
+            </tr>
+            <tr>
+                <td colspan="3"><strong>Total</strong></td>
+                <td id="total_cell"><strong>$0.00</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="invoice.js"></script>
+    <h2>
+        OUR SHIPPING POLICY IS:A subtotal $0 - $50 will be $2 shipping
+        A subtotal $50 - $100 will be $5 shipping
+        Subtotals over $100 will be charged 5% of the subtotal amount
+    </h2>
+</body>
+</html>
