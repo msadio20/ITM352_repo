@@ -42,7 +42,7 @@ for (let i in products) {
 
 // POST route to handle form submission
 app.post('/submit', function (req, res) {
-    let POST = request.body;
+    let POST = req.body;
 
     let quantitySelect = false;
 
@@ -62,7 +62,7 @@ app.post('/submit', function (req, res) {
     }
     if (quantitySelect == false && Object.keys(errors).length == 0) {
         // Redirect to the productsDisplay page if there is an 'error'
-        response.redirect("./productsDisplay.html?error");
+        res.redirect("./productsDisplay.html?error");
     }
     else if (quantitySelect == true && Object.keys(errors).length == 0) {
         // Update the product quantities and redirect to the invoice page with valid data
@@ -74,12 +74,12 @@ app.post('/submit', function (req, res) {
         }
         console.log(products);
         // Redirect to the invoice page with valid data in the URL
-        response.redirect("./invoice.html?valid&" + qs.stringify(POST));
+        res.redirect("./invoice.html?valid&" + qs.stringify(POST));
     }
     // If there is an input error (not including no input)
     else if (Object.keys(errors).length > 0) {
         // Redirect to the productsDisplay page with an error message in the URL
-        response.redirect("./products.html?" + qs.stringify(POST) + '&inputError');
+        res.redirect("./products.html?" + qs.stringify(POST) + '&inputError');
     }
 });
 

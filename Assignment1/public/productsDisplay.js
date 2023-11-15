@@ -184,6 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 validationMessageSpan.textContent = validationMessage;
 
                 // Update the selected products array
+                /*
                 if (validationMessage === "" && quantityValue > 0) {
                     selectedProducts[i] = { product: product, quantity: quantityValue };
 
@@ -193,6 +194,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 } else {
                     delete selectedProducts[i];
                 }
+                */
             }
 
             // Add an event listener for the quantity input change event
