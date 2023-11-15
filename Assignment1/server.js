@@ -91,22 +91,28 @@ function validateQuantity(value, maxAvailable) {
     
     switch (true) {
         case isNaN(value):
-            errorMessage = "Not a number. Please enter a non-negative quantity to order.";
+            errorMessage.push("Not a number. Please enter a non-negative quantity to order.")
+            //errorMessage = "Not a number. Please enter a non-negative quantity to order.";
             break;
         case parseInt(value) !== value && value !== 0:
-            errorMessage = "Please enter an integer value."
+            errorMessage.push("Please enter an integer value.")
+            //errorMessage = "Please enter an integer value."
             break;
         case value < 0 && !Number.isInteger(value):
-            errorMessage = "Negative inventory and not an Integer. Please enter a non-negatove quantity to order.";
+            errorMessage.push("Negative inventory and not an Integer. Please enter a non-negatove quantity to order.");
+            //errorMessage = "Negative inventory and not an Integer. Please enter a non-negatove quantity to order.";
             break;
         case value < 0:
-            errorMessage = "Negative inventory. Please enter a non-negative quantity to order.";
+            errorMessage.push("Negative inventory. Please enter a non-negative quantity to order.");
+            //errorMessage = "Negative inventory. Please enter a non-negative quantity to order.";
             break;
         case !Number.isInteger(value):
-            errorMessage = "Not an Integer. Please enter a non-negative quantity to order."
+            errorMessage.push("Not an Integer. Please enter a non-negative quantity to order.")
+            //errorMessage = "Not an Integer. Please enter a non-negative quantity to order."
             break;
             case value > maxAvailable:
-            errorMessage = `We do not have ${value} in stock. Please enter a quantity no greater than the listed availability.`;
+            errorMessage.push(`We do not have ${value} in stock. Please enter a quantity no greater than the listed availability.`);   
+            //errorMessage = `We do not have ${value} in stock. Please enter a quantity no greater than the listed availability.`;
             break;
         default:
             errorMessage = "";      // The empty string indicates no errors are present.
