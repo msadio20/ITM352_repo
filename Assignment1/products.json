@@ -1,0 +1,86 @@
+[
+    {
+        "item" : "Cheesecake Sandwich Trio",
+        "price" : 15.00,
+        "description" : "Three flavors of our classic cheesecake sandwich: strawberry, chocolate, and vanilla. You're sure to enjoy its buttery graham cracker crust and flavorful cream filling.",
+        "image" : "./images/cheesecakesandwich.jpg",
+        "available" : 25
+    },
+    {
+        "item" : "Assorted Chocolate Cookies",
+        "price" : 20.00,
+        "description" : "Pack of six soft large cookies. This pack includes two of each three flavors: chocolate chip, chocolate chip with marshmallow melt, and double chocolate chip with marshmallow melt.",
+        "image" : "./images/assortedchocolatecookies.jpg",
+        "available" : 25
+    },
+    {
+        "item" : "Black Forest Cake",
+        "price" : 12.00,
+        "description" : "A slice of decadent Black Forest Cake with a thick layer of fresh cream toped with a single cherry.",
+        "image" : "./images/blackforestcake.jpg",
+        "available" : 20
+    },
+    {
+        "item" : "Matcha Cheesecake",
+        "price" : 15.00,
+        "description" : "A slice of creamy and velvety matcha flavored cheesecake with fresh cream and a single strawberry.",
+        "image" : "./images/matchacheesecake.jpg",
+        "available" : 20
+    },
+    {
+        "item" : "Cream Carrot Cake",
+        "price" : 12.00,
+        "description" : "A slice of sweet and moist carrot cake with cream cheese icing.",
+        "image" : "./images/carrotcake.jpg",
+        "available" : 25
+    },
+    {
+        "item" : "Dulce de Leche Cake",
+        "price" : 16.00,
+        "description" : "A slice of soft and moist vanilla sponge cake with cream cheese and dulce de leche frosting.",
+        "image" : "./images/dulcedelechecake.jpg",
+        "available" : 15
+    },
+    {
+        "item" : "Raspberry Cheesecake",
+        "price" : 18.00,
+        "description" : "A six-inch cut of our original rich and creamy cheesecake with raspberry glaze and raspberry fruit.",
+        "image" : "./images/raspberrycheesecake.jpg",
+        "available" : 10
+    },
+    {
+        "item" : "Bolo de Leite",
+        "price" : 16.00,
+        "description" : "A four-by-four inch slice of rich and creamy Brazillian condensed milk cake with fresh cream poured on top to balance the sweetness. A slice of dried orange and cherries are also included for a fruity kick.",
+        "image" : "./images/bolodeleite.jpg",
+        "available" : 15
+    },
+    {
+        "item" : "Raspberry Shortcake",
+        "price" : 15.00,
+        "description" : "This soft and buttery cake envelopes freshly whipped cream and sweet raspberries. A dessert sure to satisfy your cravings.",
+        "image" : "./images/raspberryshortcake.jpg",
+        "available" : 15
+    },
+    {
+        "item" : "Coconut Custard Pudding",
+        "price" : 10.00,
+        "description" : "A cup of silky and sweet custard topped with creamy coconut pudding that will make you cry tears of joy.",
+        "image" : "./images/coconutcustardpudding.jpg",
+        "available" : 20
+    },
+    {
+        "item" : "Blueberry Yogurt Cheesecake",
+        "price" : 15.00,
+        "description" : "A mini version of our smooth and tangy cheesecake balanced with the sweetness of blueberry yogurt and sweet cream topped with fresh blueberries.",
+        "image" : "./images/blueberryyogurtcheesecake.jpg",
+        "available" : 20
+    },
+    {
+        "item" : "Oreo Cheesecake",
+        "price" : 12.00,
+        "description" : "A slice of our sweet cheesecake mixed with crumbled oreos topped with half an oreo. This dessert substitutes the usual graham base with crushed oreos as well for an extra taste of chocolate. ",
+        "image" : "./images/oreocheesecake.jpg",
+        "available" : 25
+    }
+]

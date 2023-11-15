@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maddie's Bakeshop Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Fredericka the Great' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Edu TAS Beginner' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Add custom CSS for the carousel */
+        .carousel-item img {
+            padding-top: 20px;
+            height: 900px; /* Adjust the height as needed */
+            width: auto; /* Maintain the aspect ratio */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid text-center">
+        <h1 class="display-1">Maddie's Bakeshop</h1>
+    </div>
+    <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="productsDisplay.html">Delivery Menu</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images/exterior.jpg" alt="Exterior" class="d-block">
+      </div>
+      <div class="carousel-item">
+        <img src="/images/interior.jpg" alt="Interior" class="d-block">
+      </div>
+      <div class="carousel-item">
+        <img src="/images/meal1.jpg" alt="meal1" class="d-block">
+      </div>
+      <div class="carousel-item">
+        <img src="/images/meal2.jpg" alt="meal2" class="d-block">
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+    </div>
+  
+    <div class="container-fluid">
+        <div class="otherDesserts text-center">
+        <img src="/images/frenchToast.jpg">
+        <img src="/images/matchaCupcake.jpg">
+        <img src="/images/2cakes.jpg">
+        <img src="/images/lemoncake.jpg">
+        <img src="/images/fruitcheesecake.jpg">
+        <img src="/images/heartmacaron.jpg">
+    </div>
+    
+    <div class="container-fluid mt-3 text-center">
+        <h1 class="display-2">Coffee and Cake in one place !</h1>
+        <h2>
+            <br>
+            Monday to Friday
+            <br>
+            8 AM to 5 PM
+            <br>
+            Saturday & Sunday
+            <br>
+            9 AM to 3 PM
+            <br>
+        </h2>
+    </div>
+</body>
+<footer>
+    <h4>
+        Ward Village/ Kaka‘ako 
+        <br>
+        1200 Ala Moana Blvd. Ste 641 (Ward Centre)
+        <br>
+        808-555-5555
+        <br>
+    </h4>
+</footer>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maddie's Bakeshop Delivery Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Fredericka the Great' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Edu TAS Beginner' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="./products.js"></script>
+</head>
+<body>
+    <h1 class="display-1">Maddie's Bakeshop</h1>
+    <div class="container-fluid">
+<!-- This creates a navigation bar that spans across the entire browser.. thanks to 'container-fluid' -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+            <li class="nav-item">
+            <a class="nav-link" href="productsDisplay.html">Delivery Menu</a>
+            </li>
+            </ul>
+        </nav>
+    </div>    
+    <br>        
+    <!-- 'container' allows the page to have padding on both sides - just a personal preference -->
+    <div class="container">
+        <div id="productDetails" class="row">
+            <!-- The product details from 'productsDisplay.js' will be generated here -->
+        </div>
+    <!-- The 'alert-container' is for the message that pops up when data is invalid. I placed it at the bottom of the page but above the 'submit' button. I did this because I personally hate when the page sends you back to the top automatically. -->
+        <div class="alert-container"></div>
+
+    <!-- Prodiuct form that submits the quantity selected to 'invoice.html' when purchased.-->
+    <form id="productForm" name="quantity_form" action="/submit" method="POST">
+        
+    <!-- 'd-grid' allows the button to widen to the size of the container it is placed in. I placed it in the non-fluid container so it fit better with the products. I feel like otherwise would be too wide. -->
+        <div class="d-grid">
+            <button type="submit" class="btn btn-outline-dark btn-block">Purchase</button>
+        </div>
+    </form>
+    </div>        
+    <script src="productsDisplay.js"></script>
+</body>
+<footer>
+    <div class="container">
+        <p>
+            OUR DELIVERY POLICY : A subtotal $0 - $29.99 will have a $3 delivery fee.
+            A subtotal $30 - $49.99 will have a $2 fee
+            Subtotals over $50 will be charged 2% of the subtotal amount
+    <br><br>
+            All orders are subject to the 4.5% Hawaii State Tax
+        </p>     
+        </div>    
+</footer>
+
+</html>

@@ -1,0 +1,50 @@
+/* CSS for Maddie's Bakeshop Invoice */
+
+h1 {
+    padding: 30px;
+    font-family: "Fredericka the Great";    /* Custom font to make chalkboard writing effect */
+    font-size: 36px;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Edu TAS Beginner";        /* This font resembles handwriting to bring cafe nostalgia */
+    font-size: 16px;
+}
+
+body {
+    font-family: "Edu TAS Beginner";        /* This font resembles handwriting to bring cafe nostalgia */
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td {
+    font-size: 18px;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+th {
+    font-size: 24px;
+    text-align: center;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 75px;
+}
+
+/* This is to remove the blue link styling for the product icons */
+.product-icon-link {
+    text-decoration: none;                   /* Remove underline */
+    color: inherit;                          /* Inherits the parent color */
+}
